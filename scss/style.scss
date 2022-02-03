@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    div{
+        flex-grow: 1;
+        margin: 1.5% 0 1.5% 5%;
+
+        #mi{
+            color: #CE2121;
+            font-size: 2.5em;
+        }
+        span{
+            color: #8DC729;
+            font-size: 2.5em;
+            font-weight: bolder;
+        }
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+        margin: 1.5% 3% 1.5% 0;
+        font-size: large;
+        
+    }
+    a:last-child{
+        margin-right: 5%;
+    }
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+
+    .content{
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        margin: 3% 0 3% 3%;
+    
+        h1{
+            font-size: 3em;
+            margin-bottom: 5%;
+            width: fit-content;
+        }
+        p{
+            font-size: 1.5em;
+            margin-bottom: 5%;
+            width: 50%;
+        }
+        h4{
+            font-size: 1.5em;
+            width: fit-content;
+        }
+    
+    }
+    .container{
+        width: 100%;
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .imgContain{
+            width: 25%;
+            height: 80%;
+            background-size: cover;
+            margin-right: 25px;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        #breakfast{
+            background-image: url("../Images/apple-breakfast-quinoa-7.jpeg");
+        }
+        #lunch{
+            background-image: url("../Images/pasta-salad-recipe-for-lunch.jpg");
+        }
+        #dinner{
+            background-image: url("../Images/Screenshot_208.jpg");
+            margin-right: 5%;
+        }
+        .wht{
+            background-color: #FFF;
+            padding: 10px;
+        }
+        .grn{
+            background-color: #8DC729;
+            padding: 10px 0;
+            width: 150px;
+            display: flex;
+            justify-content: flex-end;
+
+            span{
+                padding-right: 10px;
+            }
+        }
+    }
+
+}
